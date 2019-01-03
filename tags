@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BOT_NAME	SnatchCar/settings.py	/^BOT_NAME = 'SnatchCar'$/;"	kind:variable	line:12
+Book	SnatchCar/spiders/book.py	/^class Book(scrapy.Spider):$/;"	kind:class	line:27
+NEWSPIDER_MODULE	SnatchCar/settings.py	/^NEWSPIDER_MODULE = 'SnatchCar.spiders'$/;"	kind:variable	line:15
+ROBOTSTXT_OBEY	SnatchCar/settings.py	/^ROBOTSTXT_OBEY = True$/;"	kind:variable	line:22
+SPIDER_MODULES	SnatchCar/settings.py	/^SPIDER_MODULES = ['SnatchCar.spiders']$/;"	kind:variable	line:14
+SnatchcarItem	SnatchCar/items.py	/^class SnatchcarItem(scrapy.Item):$/;"	kind:class	line:11
+SnatchcarPipeline	SnatchCar/pipelines.py	/^class SnatchcarPipeline(object):$/;"	kind:class	line:9
+SnatchcarSpiderMiddleware	SnatchCar/middlewares.py	/^class SnatchcarSpiderMiddleware(object):$/;"	kind:class	line:11
+__init__.py	SnatchCar/__init__.py	1;"	kind:file	line:1
+__init__.py	SnatchCar/spiders/__init__.py	1;"	kind:file	line:1
+afterLogin	SnatchCar/spiders/book.py	/^    def afterLogin(self, response):$/;"	kind:member	line:46
+availableSlots	SnatchCar/spiders/book.py	/^    def availableSlots(self, response):$/;"	kind:member	line:75
+book.py	SnatchCar/spiders/book.py	1;"	kind:file	line:1
+bookedSlots	SnatchCar/spiders/book.py	/^bookedSlots = []$/;"	kind:variable	line:25
+bookingConfirm	SnatchCar/spiders/book.py	/^    def bookingConfirm(self, response):$/;"	kind:member	line:118
+bookingConfirmed	SnatchCar/spiders/book.py	/^    def bookingConfirmed(self, response):$/;"	kind:member	line:128
+bookingPage	SnatchCar/spiders/book.py	/^    def bookingPage(self, response):$/;"	kind:member	line:57
+custom_settings	SnatchCar/spiders/book.py	/^    custom_settings = {$/;"	kind:variable	line:30
+datetime	SnatchCar/spiders/book.py	/^from datetime import datetime$/;"	kind:namespace	line:3
+daysToBook	SnatchCar/spiders/book.py	/^daysToBook = ['2','3','4','5','6']$/;"	kind:variable	line:21
+find_packages	setup.py	/^from setuptools import setup, find_packages$/;"	kind:namespace	line:3
+from_crawler	SnatchCar/middlewares.py	/^    def from_crawler(cls, crawler):$/;"	kind:member	line:17
+getDate	SnatchCar/spiders/book.py	/^        def getDate(daySelector):$/;"	kind:function	line:76
+getSessions	SnatchCar/spiders/book.py	/^        def getSessions(daySelector):$/;"	kind:function	line:78
+items.py	SnatchCar/items.py	1;"	kind:file	line:1
+middlewares.py	SnatchCar/middlewares.py	1;"	kind:file	line:1
+name	SnatchCar/spiders/book.py	/^    name = "book"$/;"	kind:variable	line:28
+name	setup.py	/^    name         = 'project',$/;"	kind:variable	line:6
+packages	setup.py	/^    packages     = find_packages(),$/;"	kind:variable	line:8
+parse	SnatchCar/spiders/book.py	/^    def parse(self, response):$/;"	kind:member	line:35
+pin	SnatchCar/spiders/book.py	/^pin = '992626'$/;"	kind:variable	line:11
+pipelines.py	SnatchCar/pipelines.py	1;"	kind:file	line:1
+process_item	SnatchCar/pipelines.py	/^    def process_item(self, item, spider):$/;"	kind:member	line:10
+process_spider_exception	SnatchCar/middlewares.py	/^    def process_spider_exception(response, exception, spider):$/;"	kind:member	line:38
+process_spider_input	SnatchCar/middlewares.py	/^    def process_spider_input(response, spider):$/;"	kind:member	line:23
+process_spider_output	SnatchCar/middlewares.py	/^    def process_spider_output(response, result, spider):$/;"	kind:member	line:30
+process_start_requests	SnatchCar/middlewares.py	/^    def process_start_requests(start_requests, spider):$/;"	kind:member	line:46
+scrapy	SnatchCar/items.py	/^import scrapy$/;"	kind:namespace	line:8
+scrapy	SnatchCar/spiders/book.py	/^import scrapy$/;"	kind:namespace	line:1
+sessionsToBook	SnatchCar/spiders/book.py	/^sessionsToBook = ['1','4']$/;"	kind:variable	line:17
+settings.py	SnatchCar/settings.py	1;"	kind:file	line:1
+setup	setup.py	/^from setuptools import setup, find_packages$/;"	kind:namespace	line:3
+setup.py	setup.py	1;"	kind:file	line:1
+signals	SnatchCar/middlewares.py	/^from scrapy import signals$/;"	kind:namespace	line:8
+spider_opened	SnatchCar/middlewares.py	/^    def spider_opened(self, spider):$/;"	kind:member	line:55
+start_urls	SnatchCar/spiders/book.py	/^    start_urls = ['https:\/\/www.bbdc.sg\/bbdc\/bbdc_web\/newheader.asp']$/;"	kind:variable	line:29
+time	SnatchCar/spiders/book.py	/^import time$/;"	kind:namespace	line:2
+username	SnatchCar/spiders/book.py	/^username = 'S9870982G'$/;"	kind:variable	line:8
+version	setup.py	/^    version      = '1.0',$/;"	kind:variable	line:7

@@ -1,0 +1,862 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	ComfortDelGro Driving Centre Online Booking Portal
+</title><link href="../App_Themes/Default.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <form name="aspnetForm" method="post" action="BookingPL.aspx" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTc3NTM0OTczMw9kFgJmD2QWAgIDD2QWBgIBD2QWAgIJDzwrAAkCAA8WBh4MRGF0YVNvdXJjZUlEBQtYbWxEYXRhbWVudR4NTmV2ZXJFeHBhbmRlZGQeC18hRGF0YUJvdW5kZ2QIFCsAAgUDMDowFCsAAhYMHgRUZXh0BQRIb21lHgVWYWx1ZQUESG9tZR4LTmF2aWdhdGVVcmwFGH4vQm9va2luZy9EYXNoYm9hcmQuYXNweB4IRGF0YVBhdGgFEC8qW3Bvc2l0aW9uKCk9MV0eCURhdGFCb3VuZGceCEV4cGFuZGVkZxQrAAgFGzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NhQrAAIWDB8DBQdCb29raW5nHwQFB0Jvb2tpbmceDFNlbGVjdEFjdGlvbgsqLlN5c3RlbS5XZWIuVUkuV2ViQ29udHJvbHMuVHJlZU5vZGVTZWxlY3RBY3Rpb24DHwYFIC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTFdHwdnHwhnFCsABwUXMDowLDA6MSwwOjIsMDozLDA6NCwwOjUUKwACFgofAwUMZS1UcmlhbCBUZXN0HwQFDGUtVHJpYWwgVGVzdB8FBRx+L0Jvb2tpbmcvQm9va2luZ0VUcmlhbC5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0xXR8HZ2QUKwACFgofAwUTSW50ZXJuYWwgRXZhbHVhdGlvbh8EBRNJbnRlcm5hbCBFdmFsdWF0aW9uHwUFGH4vQm9va2luZy9Cb29raW5nSUUuYXNweB8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9Ml0fB2dkFCsAAhYKHwMFDVRoZW9yeSBMZXNzb24fBAUNVGhlb3J5IExlc3Nvbh8FBRh+L0Jvb2tpbmcvQm9va2luZ1RMLmFzcHgfBgUwLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTNdHwdnZBQrAAIWCh8DBQtUaGVvcnkgVGVzdB8EBQtUaGVvcnkgVGVzdB8FBRh+L0Jvb2tpbmcvQm9va2luZ1RULmFzcHgfBgUwLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTRdHwdnZBQrAAIWCh8DBRBQcmFjdGljYWwgTGVzc29uHwQFEFByYWN0aWNhbCBMZXNzb24fBQUYfi9Cb29raW5nL0Jvb2tpbmdQTC5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XR8HZ2QUKwACFgofAwUOUHJhY3RpY2FsIFRlc3QfBAUOUHJhY3RpY2FsIFRlc3QfBQUYfi9Cb29raW5nL0Jvb2tpbmdQVC5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT02XR8HZ2QUKwACFgwfAwUdQ2FuY2VsbGF0aW9uL1JlLVByaW50IFJlY2VpcHQfBAUdQ2FuY2VsbGF0aW9uL1JlLVByaW50IFJlY2VpcHQfCQsrBAMfBgUgLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9Ml0fB2cfCGcUKwADBQcwOjAsMDoxFCsAAhYKHwMFDENhbmNlbGxhdGlvbh8EBQxDYW5jZWxsYXRpb24fBQUcfi9Cb29raW5nL0Jvb2tpbmdDYW5jZWwuYXNweB8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0yXS8qW3Bvc2l0aW9uKCk9MV0fB2dkFCsAAhYKHwMFEFJlLVByaW50IFJlY2VpcHQfBAUQUmUtUHJpbnQgUmVjZWlwdB8FBRp+L0Jvb2tpbmcvUHJpbnRSZXBvcnQuYXNweB8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0yXS8qW3Bvc2l0aW9uKCk9Ml0fB2dkFCsAAhYMHwMFFVRyYW5zYWN0aW9uIFN0YXRlbWVudB8EBRVUcmFuc2FjdGlvbiBTdGF0ZW1lbnQfCQsrBAMfBgUgLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9M10fB2cfCGcUKwADBQcwOjAsMDoxFCsAAhYKHwMFD0Jvb2tpbmcgU3VtbWFyeR8EBQ9Cb29raW5nIFN1bW1hcnkfBQUffi9Cb29raW5nL1N0YXRlbWVudEJvb2tpbmcuYXNweB8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0zXS8qW3Bvc2l0aW9uKCk9MV0fB2dkFCsAAhYKHwMFFFN0YXRlbWVudCBvZiBBY2NvdW50HwQFFFN0YXRlbWVudCBvZiBBY2NvdW50HwUFH34vQm9va2luZy9TdGF0ZW1lbnRBY2NvdW50LmFzcHgfBgUwLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9M10vKltwb3NpdGlvbigpPTJdHwdnZBQrAAIWDB8DBQ9TY2hvb2wgVHJhaW5pbmcfBAUPU2Nob29sIFRyYWluaW5nHwkLKwQDHwYFIC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTRdHwdnHwhnFCsAAgUDMDowFCsAAhYKHwMFCkUtTGVhcm5pbmcfBAUKRS1MZWFybmluZx8FBRt+L0Jvb2tpbmcvU2NoRUxlYXJuaW5nLmFzcHgfBgUwLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9NF0vKltwb3NpdGlvbigpPTFdHwdnZBQrAAIWDB8DBRBDdXN0b21lciBTZXJ2aWNlHwQFEEN1c3RvbWVyIFNlcnZpY2UfCQsrBAMfBgUgLypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9NV0fB2cfCGcUKwAHBRcwOjAsMDoxLDA6MiwwOjMsMDo0LDA6NRQrAAIWCh8DBRJDYXIgQWxsb2NhdGlvbiBNYXAfBAUSQ2FyIEFsbG9jYXRpb24gTWFwHwkLKwQDHwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTVdLypbcG9zaXRpb24oKT0xXR8HZxQrAAkFHzA6MCwwOjEsMDoyLDA6MywwOjQsMDo1LDA6NiwwOjcUKwACFgofAwUDVWJpHwQFA1ViaR8FBR5+L0NhckFsbG9jYXRpb25NYXAvVWJpTWFwLmFzcHgfBgVALypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9NV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0xXR8HZ2QUKwACFgofAwUIQnVhbmdrb2sfBAUIQnVhbmdrb2sfBQUjfi9DYXJBbGxvY2F0aW9uTWFwL0J1YW5na29rTWFwLmFzcHgfBgVALypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9NV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0yXR8HZ2QUKwACFgofAwUIRmVybnZhbGUfBAUIRmVybnZhbGUfBQUgfi9DYXJBbGxvY2F0aW9uTWFwL0Zlcm52YWxlLmFzcHgfBgVALypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9NV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT0zXR8HZ2QUKwACFgofAwUFS292YW4fBAUFS292YW4fBQUgfi9DYXJBbGxvY2F0aW9uTWFwL0tvdmFuTWFwLmFzcHgfBgVALypbcG9zaXRpb24oKT0xXS8qW3Bvc2l0aW9uKCk9NV0vKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT00XR8HZ2QUKwACFgofAwUMUG90b25nIFBhc2lyHwQFDFBvdG9uZyBQYXNpch8FBSN+L0NhckFsbG9jYXRpb25NYXAvUG90b25nUGFzaXIuYXNweB8GBUAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XS8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTVdHwdnZBQrAAIWCh8DBQdQdW5nZ29sHwQFB1B1bmdnb2wfBQUifi9DYXJBbGxvY2F0aW9uTWFwL1B1bmdnb2xNYXAuYXNweB8GBUAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XS8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTZdHwdnZBQrAAIWCh8DBQhTZW5na2FuZx8EBQhTZW5na2FuZx8FBSN+L0NhckFsbG9jYXRpb25NYXAvU2VuZ2thbmdNYXAuYXNweB8GBUAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XS8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTddHwdnZBQrAAIWCh8DBQlTZXJhbmdvb24fBAUJU2VyYW5nb29uHwUFJH4vQ2FyQWxsb2NhdGlvbk1hcC9TZXJhbmdvb25NYXAuYXNweB8GBUAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XS8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPThdHwdnZBQrAAIWCh8DBRJUb3AtVXAgU3RvcmUgVmFsdWUfBAUSVG9wLVVwIFN0b3JlIFZhbHVlHwUFIH4vQm9va2luZy9DU1RvcFVwU3RvcmVWYWx1ZS5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTVdLypbcG9zaXRpb24oKT0yXR8HZ2QUKwACFgofAwUQUmVuZXcgTWVtYmVyc2hpcB8EBRBSZW5ldyBNZW1iZXJzaGlwHwUFIH4vQm9va2luZy9DU1JlbmV3TWVtYmVyc2hpcC5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTVdLypbcG9zaXRpb24oKT0zXR8HZ2QUKwACFgofAwUXVXBkYXRlIFBlcnNvbmFsIERldGFpbHMfBAUXVXBkYXRlIFBlcnNvbmFsIERldGFpbHMfBQUffi9Cb29raW5nL0NTVXBkYXRlUGVyc29uYWwuYXNweB8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT01XS8qW3Bvc2l0aW9uKCk9NF0fB2dkFCsAAhYKHwMFElVwZGF0ZSBCVFQvUERML1FETB8EBRJVcGRhdGUgQlRUL1BETC9RREwfBQUefi9Cb29raW5nL1VwZGF0ZVBETFRlcm1zQy5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTVdLypbcG9zaXRpb24oKT01XR8HZ2QUKwACFgofAwUPQ2hhbmdlIFBhc3N3b3JkHwQFD0NoYW5nZSBQYXNzd29yZB8FBR9+L0Jvb2tpbmcvQ1NDaGFuZ2VQYXNzd29yZC5hc3B4HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTVdLypbcG9zaXRpb24oKT02XR8HZ2QUKwACFgwfAwUTRXhpdCBCb29raW5nIFBvcnRhbB8EBRNFeGl0IEJvb2tpbmcgUG9ydGFsHwkLKwQDHwYFIC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTZdHwdnHwhnFCsAAgUDMDowFCsAAhYKHwMFBkxvZ291dB8EBQZMb2dvdXQfBQUeLi4vbG9nT3V0LmFzcHg/UGFnZU5hbWU9TG9nb3V0HwYFMC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTZdLypbcG9zaXRpb24oKT0xXR8HZ2QUKwACFgwfAwUESGVscB8EBQRIZWxwHwkLKwQDHwYFIC8qW3Bvc2l0aW9uKCk9MV0vKltwb3NpdGlvbigpPTddHwdnHwhnFCsAAgUDMDowFCsAAhYKHwMFF1R1cm4gT2ZmIFBvcC11cCBCbG9ja2VyHwQFF1R1cm4gT2ZmIFBvcC11cCBCbG9ja2VyHwUFIX4vSGVscC9Qb3B1cEJsb2NrZXJBc3Npc3RhbnQuYXNweB8GBTAvKltwb3NpdGlvbigpPTFdLypbcG9zaXRpb24oKT03XS8qW3Bvc2l0aW9uKCk9MV0fB2dkZAIDD2QWDgIJDw8WAh8DBRBHb29kIGFmdGVybm9vbiwgZGQCCw8PFgIfAwUTR09IIFJVSSBZVSBBREVMSU5FIGRkAhEPDxYCHwMFCDNBMDIzMzUwZGQCFQ8PFgIfAwUiQ2xhc3MgM0EgKEF1dG8pIFByYWN0aWNhbCAmIFRoZW9yeWRkAhkPDxYCHwMFCVM5ODA1OTQ1SGRkAh0PDxYCHwMFByQ5MDkuODVkZAIhDw8WAh8DBQYkMTAuMDBkZAIFD2QWEAIJDw8WBB8DBagBV2l0aCBlZmZlY3QgZnJvbSAzIE1heSAyMDE2LCBhbGwgY2xhc3MgMy8zQSBMZWFybmVycyBlbnJvbGxlZCBhdCBVYmkgKGV4Y2VwdCBmb3IgT25lIFRlYW0vQUQtVmlvcykgYXJlIG9ubHkgYWxsb3dlZCB0byBib29rIGEgbWF4aW11bSBvZiAxMiBwcmFjdGljYWwgbGVzc29ucyBwZXIgbW9udGguHgdWaXNpYmxlZ2RkAg0PEA8WBh4NRGF0YVRleHRGaWVsZAUNUmVzQXNtYmx5RGVzYx4ORGF0YVZhbHVlRmllbGQFC1Jlc0FzbUJseUlEHwJnZBAVAg8tUGxlYXNlIFNlbGVjdC0yQ2xhc3MgM0EgKEF1dG8pIFByYWN0aWNhbCAmIFRoZW9yeSAgICAgICAgICAgICAgICAVAgAUQVVUT0NBUi1DM0EgICAgICAgICAUKwMCZ2cWAWZkAg8PZBYCZg9kFgICAQ9kFgICAw8QZGQWAQICZAIRD2QWAmYPZBYCAgEPZBYCAgMPEGRkFgBkAhMPZBYCZg9kFgICBQ8PFgYfAwUeWW91IGhhdmUgMCB1bmNvbmZpcm1lZCBzZXNzaW9uHgdUb29sVGlwZR4HRW5hYmxlZGhkZAIjD2QWAmYPZBYCAgEPPCsADQBkAiUPZBYCZg9kFgwCAQ8PFgIeCEltYWdlVXJsBRt+L2ltYWdlcy9DbGFzczMvaW1hZ2VzMS5naWZkZAIDDw8WAh8DBQlBdmFpbGFibGVkZAIFDw8WAh8PBRt+L2ltYWdlcy9DbGFzczMvaW1hZ2VzMi5naWZkZAIHDw8WAh8DBR5Zb3UgaGF2ZSByZXNlcnZlZCB0aGlzIHNlc3Npb25kZAIJDw8WAh8PBRt+L2ltYWdlcy9DbGFzczMvaW1hZ2VzMy5naWZkZAILDw8WAh8DBR9Zb3UgaGF2ZSBjb25maXJtZWQgdGhpcyBzZXNzaW9uZGQCKQ9kFgJmD2QWAgIBDw8WAh8OaGRkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRVjdGwwMCRNZW51MSRUcmVlVmlldzEFJGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZMYXRlc3Rhdg9nZPp7NuNBjBB4dqJVPsWIKwFt5AqO" />
+
+
+<script src="/NewPortal/ScriptResource.axd?d=OoSlSehRfppjF1Cry8xa6rvw7QFfpwvyg66Z_etXdbd-rxcsNzmZBqVRvrfqS8ye0Q0B7Ag6ox7DZYjCHhzHkZYecXISEsQKy9Fy-ZdUWbHXkUYUAdP_rKqCRiT3JoHGJESBVHBgGJRsYqTOF667Lfn2A-tMZtnUEU8sdBhCcE-SZSW_0&amp;t=635089010593982276" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="01B9CB21" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="nQ9IWWZ08P8eIUep5duQckzsx8UySomO9GbVAVVMLAeBVvbWmVYOjCUydGcc4zlotZnosRnfHIwtEa5jrCqVAUyMki-AQZN_bv_CKIto82t15x0Q0" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWGgLN8+n5AQL7lNjsDQLayeqDCQLG7pncAwLLueHICALAq63nBAKVpK2qCwLOiI6rBgL1x87lCwKLsYicDAKPvfGzDQL28YKGAQLDxJ6eCgLm8oXzAQLLg/WQCwLo3uSOAgKAgfWhBwKAgfmhBwKAgf2hBwLjlcPCBALD7PnoCQKXh7WvBAKb4t3aCwKMxLTvCAL6uakZAveoidUE/RFzSDE35b9iXNbfKM1vgNPSvPg=" />
+        <table width="100%" border="0">
+            <tr>
+                <td valign="top" style="width: 1px">
+                <table width="100%" border="0">
+                    <tr>
+                        <td style="height:100%">
+<div class="PrettyMenu" id="ctl00_ctl00_MainContent_LiveExample_Menu1">  
+    <table border="0" cellpadding="0" cellspacing="0" style="width: 260px">
+                    <tr>
+                        <td style="height:7px; width:7px"><img id="ctl00_Menu1_TopLeftCurve" src="../App_Themes/images/crn_1.gif" height="7" width="7" border="0" /></td>
+                        <td style="height:7px; width:100%"><img id="ctl00_Menu1_TopLine" src="../App_Themes/images/crn_2.gif" height="7" width="100%" border="0" /></td>
+                        <td style="height:7px; width:7px">
+                        
+                        <img id="ctl00_Menu1_TopRightCurve" src="../App_Themes/images/crn_3.gif" height="7" width="7" border="0" />
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height:540px; width:7;" valign="top"><img id="ctl00_Menu1_LeftLine" src="../App_Themes/images/crn_4.gif" height="540" width="7" border="0" /></td>
+                        <td style="height:100%; width:260px;" class="backgroundColor">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                <td style="height: 20px; background-color: #e4e4e4; width: 6px;"></td>
+                                <td align="left" style="height: 20px; background-color: #e4e4e4; width: 254px;" >
+                                    &nbsp;</td>
+                                </tr>
+                                <tr valign="top">
+                                <td colspan="2" align="left" style="height: 520px; background-color: #e4e4e4; width: 270px;" >
+                                <a href="#ctl00_Menu1_TreeView1_SkipLink"><img alt="Skip Navigation Links." src="/NewPortal/WebResource.axd?d=-7yIDS8sb30yL21dqwRDWZuk9J1Q3bHiNiiW_XKb4WXCHo-a4PJKZT44SDFCx5kzb8mZZUi1hULtzBUkm62vAxGB7UU1&amp;t=635588912026805809" width="0" height="0" border="0" /></a><div id="ctl00_Menu1_TreeView1"><b><font color="Black">
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Home" border="0" /></a></td><td nowrap="nowrap"><a href="Dashboard.aspx" id="ctl00_Menu1_TreeView1t0"><b><font color="Black">Home</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Booking')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Booking" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t1"><b><font color="Black">Booking</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingETrial.aspx" id="ctl00_Menu1_TreeView1t2"><b><font color="Black">e-Trial Test</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingIE.aspx" id="ctl00_Menu1_TreeView1t3"><b><font color="Black">Internal Evaluation</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingTL.aspx" id="ctl00_Menu1_TreeView1t4"><b><font color="Black">Theory Lesson</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingTT.aspx" id="ctl00_Menu1_TreeView1t5"><b><font color="Black">Theory Test</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingPL.aspx" id="ctl00_Menu1_TreeView1t6"><b><font color="Black">Practical Lesson</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingPT.aspx" id="ctl00_Menu1_TreeView1t7"><b><font color="Black">Practical Test</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Cancellation/Re-Print Receipt')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Cancellation/Re-Print Receipt" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t8"><b><font color="Black">Cancellation/Re-Print Receipt</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="BookingCancel.aspx" id="ctl00_Menu1_TreeView1t9"><b><font color="Black">Cancellation</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="PrintReport.aspx" id="ctl00_Menu1_TreeView1t10"><b><font color="Black">Re-Print Receipt</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Transaction Statement')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Transaction Statement" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t11"><b><font color="Black">Transaction Statement</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="StatementBooking.aspx" id="ctl00_Menu1_TreeView1t12"><b><font color="Black">Booking Summary</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="StatementAccount.aspx" id="ctl00_Menu1_TreeView1t13"><b><font color="Black">Statement of Account</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\School Training')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse School Training" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t14"><b><font color="Black">School Training</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="SchELearning.aspx" id="ctl00_Menu1_TreeView1t15"><b><font color="Black">E-Learning</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Customer Service')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Customer Service" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t16"><b><font color="Black">Customer Service</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Customer Service\\Car Allocation Map')"><img src="/NewPortal/WebResource.axd?d=GInz-mw77TnaVj69KpEWuI7DlAk74dZvejgmE2lhTshBjhDNR6h_jp8-uV8-WLImlpDiYHlja1ghcUTWNJ_jrG-ESaw6iS1vCp0jvKcsX-6TkfS80&amp;t=635588912026805809" alt="Expand Car Allocation Map" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t17"><b><font color="Black">Car Allocation Map</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="CSTopUpStoreValue.aspx" id="ctl00_Menu1_TreeView1t26"><b><font color="Black">Top-Up Store Value</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="CSRenewMembership.aspx" id="ctl00_Menu1_TreeView1t27"><b><font color="Black">Renew Membership</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="CSUpdatePersonal.aspx" id="ctl00_Menu1_TreeView1t28"><b><font color="Black">Update Personal Details</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="UpdatePDLTermsC.aspx" id="ctl00_Menu1_TreeView1t29"><b><font color="Black">Update BTT/PDL/QDL</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="CSChangePassword.aspx" id="ctl00_Menu1_TreeView1t30"><b><font color="Black">Change Password</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Exit Booking Portal')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Exit Booking Portal" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t31"><b><font color="Black">Exit Booking Portal</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="../logOut.aspx?PageName=Logout" id="ctl00_Menu1_TreeView1t32"><b><font color="Black">Logout</font></b></a></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><a href="javascript:__doPostBack('ctl00$Menu1$TreeView1','tHome\\Help')"><img src="/NewPortal/WebResource.axd?d=Y8jEonz1WfR8G5Wg8r6451IvGKHs691eWCXedrgoLQ6lZPMXEC_cPywNgfAdf6Bf73Qu9IgeBKWUYaDPmW8axWFtR3r-fDy7yEICkLTPh_hlrP0b0&amp;t=635588912026805809" alt="Collapse Help" border="0" /></a></td><td nowrap="nowrap"><span id="ctl00_Menu1_TreeView1t33"><b><font color="Black">Help</font></b></span></td>
+		</tr>
+	</table><table cellpadding="0" cellspacing="0">
+		<tr>
+			<td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><table width="20">
+				<tr>
+					<td></td>
+				</tr>
+			</table></td><td><img src="/NewPortal/WebResource.axd?d=At2HgbgkPTChZ4jaag5Orefx_N-lvT76F52Kg6C4CeN71lc43nKJCEeAjE7sZOXSfE2sea0nd9U_sN_8HNprvhu3md_vxoirpAKTyXIXmoqeTEtQ0&amp;t=635588912026805809" alt="" /></td><td nowrap="nowrap"><a href="../Help/PopupBlockerAssistant.aspx" id="ctl00_Menu1_TreeView1t34"><b><font color="Black">Turn Off Pop-up Blocker</font></b></a></td>
+		</tr>
+	</table>
+</font></b></div><a id="ctl00_Menu1_TreeView1_SkipLink"></a></td>
+                                </tr>
+                               
+                                
+                            </table>
+                        </td>
+                        <td style="height:540px;width:7" valign="top" ><img id="ctl00_Menu1_RightLine" src="../App_Themes/images/crn_5.gif" height="540" width="7" border="0" /></td>
+                    </tr>
+                    <tr>
+                        <td style="height:7px; width:7px"><img id="ctl00_Menu1_BottomLeftCurve" src="../App_Themes/images/crn_6.gif" height="7" width="7" border="0" /></td>
+                        <td style="height:7px; width:100%"><img id="ctl00_Menu1_BottomLine" src="../App_Themes/images/crn_7.gif" height="7" width="100%" border="0" /></td>
+                        <td style="height:7px; width:7px"><img id="ctl00_Menu1_BottomRightCurve" src="../App_Themes/images/crn_8.gif" height="7" width="7" border="0" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center" style="height:20px"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center" style="height: 25px">
+                            <a href="http://www.cdc.com.sg/Users/Testdates/TestDatesDisplay.asp" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center" style="height: 25px">
+                            <a href="http://www.cdc.com.sg/users/schedules/theorytimetablemain.asp" target="_blank"></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center" style="height:10px"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                                <tr valign="top" style="width:100%">
+                                    <td align="center" >
+                                        <span id="ctl00_Menu1_lblCDC" style="display:inline-block;"><b><font face="Verdana">ComfortDelGro Driving Centre Pte Ltd</font></b></span>
+                                    </td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                        <span id="ctl00_Menu1_Label1" style="display:inline-block;"><font face="Verdana">205 Ubi Avenue 4 Singapore 408805</font></span></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                        <span id="ctl00_Menu1_Label2" style="display:inline-block;"><font face="Verdana">Tel : (65) 6841 8900</font></span></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                            <span id="ctl00_Menu1_Label3" style="display:inline-block;"><font face="Verdana">Fax : (65) 6743 9946</font></span></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center" style="height: 10px"></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                        <span id="ctl00_Menu1_Label4" style="display:inline-block;"><b><font face="Verdana">For Feedbacks / Enquiry</font></b></span></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                        Email: &nbsp;<a id="ctl00_Menu1_linkBtnInfo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Menu1$linkBtnInfo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;http://www.cdc.com.sg/users/Contact/feedback.asp&quot;, false, true))">info@cdc.com.sg</a></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center" style="height: 10px"></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center"><span id="ctl00_Menu1_Label5" style="display:inline-block;"><b><font face="Verdana">For Technical Matters</font></b></span></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                        Email: &nbsp;<a id="ctl00_Menu1_linkBtnITDept" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Menu1$linkBtnITDept&quot;, &quot;&quot;, true, &quot;&quot;, &quot;mailto:itdept@cdc.com.sg&quot;, false, true))">itdept@cdc.com.sg</a></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center" style="height: 10px"></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                            <span id="ctl00_Menu1_Label6" style="display:inline-block;"><b><font face="Verdana">Company Registration Number </font></b></span></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">199601882C<br />
+                                            </td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center" style="height: 10px"></td>
+                                </tr>
+                                <tr valign="top" style="width:100%">
+                                    <td align="center">
+                                            <img id="ctl00_Menu1_Image1" src="../images/awards.gif" border="0" /></td>
+                                </tr>
+                                <tr style="width: 100%" valign="top">
+                                    <td style="width: 260px; height: 20px;">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+    </table>
+    
+     
+    
+    
+    
+    
+  </div>
+
+
+
+                        </td>
+                    </tr>
+                </table>
+                </td>
+                <td valign="top">
+                <table width="100%" border="0">
+                <tr>
+                    <td>
+<table width="700px" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td style="height:7px; width:7px"><img id="ctl00_HeaderSub_TopLeftCurve" src="../App_Themes/images/crn_1.gif" height="7" width="7" border="0" /></td>
+        <td style="height:7px; width:100%"><img id="ctl00_HeaderSub_TopLine" src="../App_Themes/images/crn_2.gif" height="7" width="100%" border="0" /></td>
+        <td style="height:7px; width:7px"><img id="ctl00_HeaderSub_TopRightCurve" src="../App_Themes/images/crn_3.gif" height="7" width="7" border="0" /></td>
+    </tr>
+    <tr>
+        <td style="width:7px;" valign="top" ><img id="ctl00_HeaderSub_LeftLine" src="../App_Themes/images/crn_4.gif" height="130" width="7" border="0" /></td>
+        <td style="height:100px;" class="backgroundColor">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="width:100%">
+                        <span id="ctl00_HeaderSub_lblGreeting">Good afternoon, </span>
+                        <span id="ctl00_HeaderSub_lblName"><b><font color="RoyalBlue">GOH RUI YU ADELINE </font></b></span></td>
+                    <td align="right" valign="top" colspan="2">
+                        <img id="ctl00_HeaderSub_ImgLogo" alt="Logo" src="../images/logo.gif" height="64" width="250" border="0" />
+                     </td>
+                </tr>
+                <tr>
+                <td colspan="3" >
+                    <table width="100%">
+                        <tr>
+                            <td style="width:14%">
+                            <span id="ctl00_HeaderSub_lblUserID1">LEARNER ID:</span>
+                            </td >
+                            <td style="width:16%">
+                            <span id="ctl00_HeaderSub_lblUserID"><b><font color="RoyalBlue">3A023350</font></b></span></td>
+                            <td style="width:23%">
+                            <span id="ctl00_HeaderSub_lblCourse1">ENROLLED COURSE:</span>
+                            </td>
+                            <td style="width:47%">
+                            <span id="ctl00_HeaderSub_lblCourse"><b><font color="RoyalBlue">Class 3A (Auto) Practical & Theory</font></b></span></td>
+                            </tr>
+                        <tr>
+                    <td>
+                        <span id="ctl00_HeaderSub_lblNRIC1">NRIC/FIN/UIN:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_HeaderSub_lblNRIC"><b><font color="RoyalBlue">S9805945H</font></b></span></td>
+                    <td>
+                        <span id="ctl00_HeaderSub_lblStoreValue1">STORE VALUE BALANCE:</span>
+                    </td>
+                    <td>
+                        <span id="ctl00_HeaderSub_lblStoreValue"><b><font color="RoyalBlue">$909.85</font></b></span></td>
+                </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                                <span id="ctl00_HeaderSub_Label1">DEPOSIT:</span></td>
+                            <td>
+                                <span id="ctl00_HeaderSub_lblDeposit"><b><font color="RoyalBlue">$10.00</font></b></span></td>
+                        </tr>
+                        <tr>
+                            <td style="height:10px; width:100%" colspan="4" >
+                            </td>
+                        </tr>
+                    </table>
+                </td>        
+                </tr>
+            </table>
+        </td>
+        <td style="width:7px;" valign="top"><img id="ctl00_HeaderSub_RightLine" src="../App_Themes/images/crn_5.gif" height="130" width="7" border="0" /></td>
+    </tr>
+    <tr>
+        <td style="height:7px; width:7px"><img id="ctl00_HeaderSub_BottomLeftCurve" src="../App_Themes/images/crn_6.gif" height="7" width="7" border="0" /></td>
+        <td style="height:7px; width:100%"><img id="ctl00_HeaderSub_BottomLine" src="../App_Themes/images/crn_7.gif" height="7" width="100%" border="0" /></td>
+        <td style="height:7px; width:7px"><img id="ctl00_HeaderSub_BottomRightCurve" src="../App_Themes/images/crn_8.gif" height="7" width="7" border="0" /></td>
+    </tr>
+</table></td>
+                </tr>
+                <tr>
+                    <td valign="top">
+    <div>
+        <table border="0" cellspacing="0" cellpadding="0" style="width: 700px">
+            <tr>
+                <td style="height: 20px">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <img id="ctl00_ContentPlaceHolder1_imgBooking" src="../App_Themes/images/icon_booking.gif" align="absbottom" border="0" />
+                                <span id="ctl00_ContentPlaceHolder1_lblWelcome"><b><font color="#FF8200">Practical Lesson Booking</font></b></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #ff9966;">
+                                1) You are required to enter the expiry date of your Provisional Driving Licence
+                                (PDL) before you can book your
+                                <br />
+                                &nbsp; &nbsp; practical&nbsp; lesson(s).
+                                <br />
+                                2) Please note: A <strong>VALID PDL</strong> is required before the commencement
+                                of every practical lesson.<br />
+                                &nbsp; &nbsp; Learners who do not produce a<strong> VALID PDL</strong> will not
+                                be allowed to attend practical (road/circuit) lesson training.<br />
+                                3)
+                                <a id="ctl00_ContentPlaceHolder1_HyperLink1" href="UpdatePDLTermsC.aspx"><u><font color="Blue">Click here</font></u></a>
+                                to update PDL. (Only applicable for Class 2B or Class 3/3A Learners)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span id="ctl00_ContentPlaceHolder1_lblLmitMessage"><b>With effect from 3 May 2016, all class 3/3A Learners enrolled at Ubi (except for One Team/AD-Vios) are only allowed to book a maximum of 12 practical lessons per month.</b></span>
+                            </td>
+                        </tr>
+                        <tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 702px">
+                    <table border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                        <tr>
+                            <td style="width: 702px;" valign="top" align="center">
+                                <table border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                                    <tr valign="middle">
+                                        <td align="left">
+                                            <table border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                                                <tr>
+                                                    <td align="left" style="height: 40px; width: 130px">
+                                                        <span id="ctl00_ContentPlaceHolder1_lblCourse" style="display:inline-block;"><b><font color="#FF8200">Select Course</font></b></span>
+                                                    </td>
+                                                    <td style="height: 40px">
+                                                        <select name="ctl00$ContentPlaceHolder1$ddlCourse" id="ctl00_ContentPlaceHolder1_ddlCourse">
+	<option selected="selected" value="">-Please Select-</option>
+	<option value="AUTOCAR-C3A         ">Class 3A (Auto) Practical &amp; Theory                </option>
+
+</select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" colspan="2">
+                                                        <div id="ctl00_ContentPlaceHolder1_updViewInstrOpt">
+	
+                                                                
+                                                            
+</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left" colspan="2">
+                                                        <div id="ctl00_ContentPlaceHolder1_updSelectInstr">
+	
+                                                                
+                                                            
+</div>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td valign="bottom" style="width: 200px">
+                                            <div id="ctl00_ContentPlaceHolder1_updReservationCnt">
+	
+                                                    <table>
+                                                        <tbody>
+                                                            <tr valign="bottom">
+                                                                <td style="width: 100%">
+                                                                    <table cellspacing="0" cellpadding="0" width="100%" border="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    
+                                                                                    </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td style="height: 13px">
+                                                                                    &nbsp;<a id="ctl00_ContentPlaceHolder1_hlSessionCount" disabled="disabled"><b><font color="DarkRed">You have 0 unconfirmed session</font></b></a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <input type="hidden" name="ctl00$ContentPlaceHolder1$hdReserveCnt" id="ctl00_ContentPlaceHolder1_hdReserveCnt" value="0" />
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                
+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                                                <tr>
+                                                    <td style="width: 100%;" align="left">
+                                                        <div id="ctl00_ContentPlaceHolder1_updSessionAvl">
+	
+                                                                <table>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 100%; height: 25px" valign="bottom">
+                                                                                <span id="ctl00_ContentPlaceHolder1_lblSessionNo"><b></b></span>&nbsp;<span id="ctl00_ContentPlaceHolder1_lblAvlFrom"></span>&nbsp;<span id="ctl00_ContentPlaceHolder1_lblFrom"><b></b></span>
+                                                                                <span id="ctl00_ContentPlaceHolder1_lblAvlTo"></span>
+                                                                                <span id="ctl00_ContentPlaceHolder1_lblTo"><b></b></span>
+                                                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdTicketEndDate" id="ctl00_ContentPlaceHolder1_hdTicketEndDate" />
+                                                                                
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                        <td>
+                                                                            
+                                                                        </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width: 100%" valign="bottom">
+                                                                                
+                                                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdM1" id="ctl00_ContentPlaceHolder1_hdM1" value="0" />
+                                                                                <span id="ctl00_ContentPlaceHolder1_lblM1SesNo"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                &nbsp;<input type="hidden" name="ctl00$ContentPlaceHolder1$hdM2" id="ctl00_ContentPlaceHolder1_hdM2" value="0" />
+                                                                                <span id="ctl00_ContentPlaceHolder1_lblM2SesNo"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                                
+                                                                                <input type="hidden" name="ctl00$ContentPlaceHolder1$hdM3" id="ctl00_ContentPlaceHolder1_hdM3" value="0" />
+                                                                                <span id="ctl00_ContentPlaceHolder1_lblM3SesNo"></span></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            
+</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 100%">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 100%; height: 10px;">
+                                                        <span id="ctl00_ContentPlaceHolder1_lblMsg"><font color="Red"></font></span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                    <tr align="center" valign="top">
+                                        <td align="center" style="width: 702px">
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCacheBackNav" id="ctl00_ContentPlaceHolder1_hdCacheBackNav" value="5" />
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdCacheForNav" id="ctl00_ContentPlaceHolder1_hdCacheForNav" value="5" />
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdType" id="ctl00_ContentPlaceHolder1_hdType" value="Class3" />
+                                            <div id="ctl00_ContentPlaceHolder1_updNavigBar">
+	
+                                                    <table width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="width: 702px" align="center">
+                                                                    
+                                                                    
+                                                                    <span id="ctl00_ContentPlaceHolder1_lblSesTitle" style="display:inline-block;"><b><font color="#C04000"></font></b></span>
+                                                                    
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                
+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="width: 702px">
+                                            <div id="ctl00_ContentPlaceHolder1_UpdateProgress1" style="display:none;">
+	
+                                                    <br />
+                                                    &nbsp;<img id="ctl00_ContentPlaceHolder1_imgLoading1" src="../images/Progress.gif" border="0" />
+                                                    <span id="ctl00_ContentPlaceHolder1_Label3"><b><i><font face="Tahoma">Processing...</font></i></b></span>
+                                                
+</div>
+                                            &nbsp;</td>
+                                    </tr>
+                                </table>
+                                <div id="ctl00_ContentPlaceHolder1_updMainGridView">
+	
+                                        <div>
+
+	</div>
+                                        <table style="background-color: chocolate" width="100%">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 702px" align="right">
+                                                        <span id="ctl00_ContentPlaceHolder1_lblSVTitle"><b>Store Value: </b></span>
+                                                        <span id="ctl00_ContentPlaceHolder1_lblStoreValue" style="display:inline-block;"><b><font color="Black"></font></b></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 702px" align="right">
+                                                        <span id="ctl00_ContentPlaceHolder1_lblCCTitle"><b>Current Charge: </b></span>
+                                                        <span id="ctl00_ContentPlaceHolder1_lblCurrentCharge" style="display:inline-block;"><b><font color="Black"></font></b></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 702px" align="right">
+                                                        <span id="ctl00_ContentPlaceHolder1_lblNBTitle"><b>New Balance:</b></span>&nbsp;
+                                                        <span id="ctl00_ContentPlaceHolder1_lblNewBalance" style="display:inline-block;"><b><font color="Black"></font></b></span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    
+</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" style="width: 100%;">
+                                    <tr>
+                                        <td style="height: 10px">
+                                        </td>
+                                    </tr>
+                                    <tr valign="top" align="center">
+                                        <td style="width: 95%;">
+                                            <div id="ctl00_ContentPlaceHolder1_updDisplayType">
+	
+                                                    <img id="ctl00_ContentPlaceHolder1_imgAvailable" src="../images/Class3/images1.gif" border="0" />&nbsp;
+                                                    <span id="ctl00_ContentPlaceHolder1_lblAvailable"><b>Available</b></span>&nbsp;
+                                                    <img id="ctl00_ContentPlaceHolder1_imgReserved" src="../images/Class3/images2.gif" border="0" />
+                                                    <span id="ctl00_ContentPlaceHolder1_lblReserved"><b>You have reserved this session</b></span>&nbsp;
+                                                    <img id="ctl00_ContentPlaceHolder1_imgBooked" src="../images/Class3/images3.gif" border="0" />
+                                                    <span id="ctl00_ContentPlaceHolder1_lblBooked"><b>You have confirmed this session</b></span>
+                                                
+</div>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td style="width: 100%; height: 50px">
+                                            <div id="ctl00_ContentPlaceHolder1_updErrorMsg">
+	
+                                                    
+                                                
+</div>
+                                        </td>
+                                    </tr>
+                                    <tr align="center">
+                                        <td style="width: 100%">
+                                            <div id="ctl00_ContentPlaceHolder1_updBtn">
+	
+                                                    &nbsp;
+                                                
+</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdDate" id="ctl00_ContentPlaceHolder1_hdDate" />
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSession" id="ctl00_ContentPlaceHolder1_hdSession" />
+                                            <input type="hidden" name="ctl00$ContentPlaceHolder1$hdDays" id="ctl00_ContentPlaceHolder1_hdDays" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+                    </td>
+                </tr>
+                </table>
+                </td>
+             </tr>
+        </table>
+        <table width="100%" border="0">
+             <tr>
+                <td style="width: 10%; height: 100%;" align="left" valign="top" id="col01"></td>
+            </tr>
+        </table>
+        <table width="100%" border="0">
+            <tr>
+                <td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+            <td style="height: 50px; background-color: #ffffff">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr >
+                  <td align="center" ><div>Copyright &copy; 2009 
+                      <a id="ctl00_Footer1_linkbtnCDCHomepage" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$Footer1$linkbtnCDCHomepage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;http://www.cdc.com.sg&quot;, false, true))">ComfortDelGro Driving Centre</a>.
+                      All rights reserved. <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a></div></td>
+                  <td ali gn="right"></td>
+                </tr>
+            </table>
+            </td>
+      </tr>
+</table>
+</td>
+            </tr>
+        </table>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+var _analytics_scr = document.createElement('script');
+_analytics_scr.type = 'text/javascript'; _analytics_scr.async = true; _analytics_scr.src = '/_Incapsula_Resource?SWJIYLWA=2977d8d74f63d7f8fedbea018b7a1d05&ns=5';
+var _analytics_elem = document.getElementsByTagName('script')[0]; _analytics_elem.parentNode.insertBefore(_analytics_scr, _analytics_elem);
+})();
+// ]]>
+</script></body>
+</html>

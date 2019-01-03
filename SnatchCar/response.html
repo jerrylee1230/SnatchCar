@@ -1,0 +1,140 @@
+
+<DIV ID="processmsg" style="position:absolute;left:38%;top:30%;visibility:visibible"><center>
+<table cellpadding=6 border=2 bgcolor="#6487dc" bordercolor="#000000"><tr><td align="center">
+<font color="#000000" face="Trebuchet MS" size="4"><b>Loading...</b></font><br> <img src="image/await.gif" border="0"><br>
+<font color="#000000" face="Trebuchet MS" size="2">Please wait a moment</font></td></tr></table></center></DIV> 
+
+<!--<div id=processmsg style="position:absolute; z-index:3; left:400; top:200; width:200; height:50; 
+border-width:4; border-style:ridge; background-color:#CCECFF">
+<center><br><font face='Arial' Size=3><b>Processing......</b></font><br><br></center></div>-->
+
+
+
+<html>
+<head>
+<title>BBDC: Booking For 3C Practical Training</title> 
+<link rel="stylesheet" href="css/content.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script language=javascript src="admin/inc-script/bookingToolTips.js"></script>
+<script language=javascript src="admin/inc-script/common.js"></script>
+</head>
+
+
+
+
+<body onload="verifyCheckBox();initTip();" bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" background="">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr valign="top">      
+    <td><img src="image/invis.gif" width="10" height="1" border="0"></td>
+    <td width="100%" valign="top">
+    	
+    	<!-- Begin Content -->
+    	
+<!-- incLoginCheck.asp is a SSI for a standard page login check -->
+<SCRIPT LANGUAGE="javascript">
+var session = 'TRUE';
+var invalid = '';
+
+if (session != "TRUE" ){	
+	top.location.href = '/bbdc/errors/ErrorSessionEnd.asp';
+}
+//if (Request.getParameter("post") = "Y")
+//	Response.Redirect("/bbdc/errors/ErrorNavigation.asp");
+	
+//if (top == window)||(invalid == "TRUE")
+//		top.location.href = 'errors/ErrorNavigate.asp';		
+
+if (top == window)
+	top.location.href = 'errors/ErrorNavigate.asp';			
+
+</SCRIPT>
+<span id="tipDiv1" name="tipDiv1"></span>
+<SCRIPT LANGUAGE="javascript">
+var sessionAcct = '728238';
+var var_acct = parent.leftFrame.var_acct;
+ if (sessionAcct != var_acct) 
+ {
+    alert ("Your Session has logout.\nPlease Login again.");
+    top.location.href = '/bbdc/errors/ErrorSessionEnd.asp';
+ }	
+</SCRIPT>
+ 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="pgtitle">
+			Booking For <span class="pgtitle1">3C  Practical Training</span>
+		</td>
+	</tr>
+	<tr><td></td></tr>
+	<tr>
+		<td class="pgdesc" align="left">&nbsp;
+			
+		</td>
+	</tr>
+</table>
+
+
+
+	<table width="100%" border="0" cellspacing="2" cellpadding="2">
+		<tr>
+		<td colspan=2 align="center">
+ 		<!--  start error message ------------------------>
+		
+
+
+<!--start error-->
+<span id="TblSpan" style="VISIBILITY: visible">
+<table cellspacing="0" cellpadding="1" width="90%" border="0" bgcolor="#666666">
+   <tr>
+       <td>          
+          <table cellspacing="0" cellpadding="3" border="0" width="100%">	    
+	         <tr><td class="errtbltitle">Status Messages:</td></tr>
+	         <tr bgcolor="#FFFFFF">
+                 <td class="errtblmsg">	
+		            <ul><span id="error"></span><span id="TblSpan2">* There is no more slots available. Please select another schedule<BR>* Please ensure your membership is active to enable booking for your training/test slots.</span></ul>		
+	             </td>
+             </tr>
+	      </table>          
+       </td> 
+   </tr>         
+</table>
+ <br>
+</span>
+ 
+ <!--end error-->
+		<!-- end error message --------------------------->    
+		</td>
+		</tr>     
+		<tr valign="top">
+			<td class="txtbold" nowrap colspan="2">
+				<input type="button" name="" value="<< Back" class="btn" onclick="javascript:history.go(-1);" onmouseover="blueBtnOver(this)" onmouseout="blueBtnOut(this)">
+			</td>
+		</tr>
+		
+    </table>
+
+    	<!-- End Content -->    
+    </td>
+  </tr>
+</table>
+
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+</html>
+
+<head>
+<META Http-Equiv="Cache-Control" Content="no-cache">
+<META Http-Equiv="Pragma" Content="no-cache">
+<META Http-Equiv="Expires" Content="0">
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0"> 
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CHACHE">
+</head>
+<script>if (document.all) document.all.processmsg.style.visibility='hidden';</script>
+<script>if (document.layers) document.processmsg.visibility='hidden'</script>
+<script>if (document.getElementById) document.getElementById('processmsg').style.visibility='hidden'</script>
+
