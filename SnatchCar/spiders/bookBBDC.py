@@ -23,17 +23,17 @@ def send_notification(body):
 ########## Configuration begins here ##########
 
 # Self explanatory. The username you use to log into bbdc.sg
-username = ''
+username = 'S9712989D'
 
 # The password you use to log into bbdc.sg
-pin = ''
+pin = '210497'
 
 # How many days ahead to book
 daysCapWeekday = 12
 daysCapWeekend = 24
 
 # Which session numbers (1-8) to book
-sessionsToBookWeekdays = ['2', '3', '4','5']
+sessionsToBookWeekdays = ['1','2', '3', '4','5','6','7','8']
 sessionsToBookWeekends = []
 
 """
@@ -49,7 +49,7 @@ sessionsToBookWeekends = []
 
 # Which days to book.
 # Note that day #1 is Sunday, #2 is Monday, ..., and #7 is Saturday
-weekdays = ['5', '6']
+weekdays = ['1','2','3','4','5','6','7']
 weekends = []
 
 ########### Configuration ends here ###########
