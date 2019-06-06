@@ -141,7 +141,7 @@ class Book(scrapy.Spider):
             f.write(response.body)
 
         # lazy blacklist
-        blacklist = [u'06/06/2019', u'07/06/2019']
+        blacklist = [u'09/06/2019']
 
 
         if "There is no more slots available. Please select another schedule" in response.body.decode("utf-8"):
