@@ -109,7 +109,7 @@ class Book(scrapy.Spider):
             response,
             formname='frmSelectSchedule',
             formdata={
-                'Month': ['Mar/2018', 'Apr/2018', 'May/2018'],  # TODO: autogen this
+                'Month': ['Jun/2019', 'Jul/2019'],  # TODO: autogen this
                 'Session': sessionsToBookWeekdays if checkWeekday else sessionsToBookWeekends,
                 'Day': weekdays if checkWeekday else weekends,
                 'defPLVenue': '1',
@@ -141,7 +141,7 @@ class Book(scrapy.Spider):
             f.write(response.body)
 
         # lazy blacklist
-        blacklist = [u'03/04/2018', u'04/04/2018']
+        blacklist = [u'06/06/2019', u'07/06/2019']
 
 
         if "There is no more slots available. Please select another schedule" in response.body.decode("utf-8"):
