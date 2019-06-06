@@ -23,10 +23,10 @@ def send_notification(body):
 ########## Configuration begins here ##########
 
 # Self explanatory. The username you use to log into bbdc.sg
-username = ''
+username = 'S9712989D'
 
 # The password you use to log into bbdc.sg
-pin = ''
+pin = '210497'
 
 # How many days ahead to book
 daysCapWeekday = 12
